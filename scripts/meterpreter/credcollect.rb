@@ -26,7 +26,7 @@ opts.parse(args) { |opt, idx, val|
   end
 }
 
-if client.platform =~ /win32|win64/
+if client.platform =~ /win32|win64|windows/
   # Collect even without a database to store them.
   if client.framework.db.active
     db_ok = true
