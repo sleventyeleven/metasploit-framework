@@ -75,7 +75,7 @@ def enum_conf_shares()
   end
 end
 
-if client.platform =~ /win32|64/
+if client.platform =~ /win32|win64|windows/
   # Variables to hold info
   mount_history = []
   run_history = []
